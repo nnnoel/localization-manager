@@ -12,7 +12,15 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": true,
+      "dialog": {
+        "open": true
+      },
+      "fs": {
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true
+      }
     },
     "bundle": {
       "active": true,
@@ -58,7 +66,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "localization-manager",
+        "title": "Localization Manager",
         "width": 800
       }
     ]
